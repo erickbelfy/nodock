@@ -92,7 +92,9 @@ services:
 
     java:
         build:
-            context: .
+            context: ./java
+        volumes_from:
+            - volumes
 
     volumes:
         image: tianon/true
