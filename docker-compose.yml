@@ -90,6 +90,10 @@ services:
         expose:
             - "11211"
 
+    java:
+        build:
+            context: .
+
     volumes:
         image: tianon/true
         volumes:
