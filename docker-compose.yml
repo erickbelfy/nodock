@@ -94,7 +94,11 @@ services:
         build:
             context: ./java
         volumes_from:
-            - volumes
+            - maven
+
+    maven:
+        build:
+            conxtext: ./maven
 
     volumes:
         image: tianon/true
