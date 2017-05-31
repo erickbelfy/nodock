@@ -1,4 +1,3 @@
-FROM maven:3.5-jdk-8
+FROM openjdk:8
 
 CMD java
-CMD mvn

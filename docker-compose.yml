@@ -89,16 +89,20 @@ services:
             - volumes
         expose:
             - "11211"
-
     java:
         build:
             context: ./java
         volumes_from:
             - maven
+            - jhipster
 
     maven:
         build:
-            conxtext: ./maven
+            context: ./maven
+
+    jhipster:
+        build:
+            context: ./jhipster
 
     volumes:
         image: tianon/true
